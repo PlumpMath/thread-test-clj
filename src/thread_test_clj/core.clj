@@ -3,9 +3,6 @@
             [thread-test-clj.poll :refer [run-poll]])
   (:gen-class))
 
-
-
-
 (defn -main
   "Entry point from 'lein run'"
   [& args]
@@ -15,11 +12,4 @@
       (cond
         (= choice "consumers") (run-consumers)
         (= choice "poll") (run-poll)
-        :default (println "Options: consumers or poll")
-        )
-      )
-    )
-
-
-
-  )
+        :default (println "Options: consumers or poll")))))

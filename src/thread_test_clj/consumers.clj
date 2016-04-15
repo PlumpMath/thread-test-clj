@@ -2,7 +2,6 @@
   (:require [clojure.core.async :refer [chan <!! >!! go-loop]])
   (:import [java.time LocalTime]))
 
-
 (def ADDER-FILENAME "adder-report.txt")
 (def MULTIPLIER-FILENAME "multiplier-report.txt")
 
